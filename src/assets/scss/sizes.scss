@@ -1,0 +1,51 @@
+$sizes: (0, 4, 8, 10, 16, 18, 20, 24, 30, 40, 45, 50, 60, 70, 80, 90, 92, 100);
+
+@each $size in $sizes {
+  .w-#{$size} {
+    width: #{$size}rem;
+  }
+
+  .h-p-#{$size} {
+    height: percentage($size / 100);
+  }
+
+  .h-#{$size}-px {
+    height: #{$size}px;
+  }
+
+  .w-p-#{$size} {
+    width: percentage($size / 100);
+  }
+
+  .w-#{$size}-px {
+    width: #{$size}px;
+  }
+
+  .left-p-#{$size} {
+    left: percentage($size / 100);
+  }
+
+  .right-p-#{$size} {
+    right: percentage($size / 100);
+  }
+
+  .right-#{$size} {
+    right: #{$size}px;
+  }
+
+  .top-p-#{$size} {
+    top: percentage($size / 100) !important;
+  }
+
+  .top-#{$size} {
+    top: #{$size}px;
+  }
+
+  .bottom-p-#{$size} {
+    bottom: percentage($size / 100) !important;
+  }
+
+  .bottom-#{$size} {
+    bottom: #{$size}px;
+  }
+}

@@ -1,0 +1,51 @@
+$numbers: (0, 4, 8, 10, 16, 18, 20, 24, 30, 40, 45, 50, 60, 70, 80, 90, 92, 100);
+
+@each $numbers in $numbers {
+  .p-#{$numbers} {
+    padding: #{$numbers}px;
+  }
+
+  .p-p-#{$numbers} {
+    padding: percentage($numbers / 100);
+  }
+
+  .p-t-#{$numbers} {
+    padding-top: #{$numbers}px;
+  }
+
+  .p-b-#{$numbers} {
+    padding-bottom: #{$numbers}px;
+  }
+
+  .p-l-#{$numbers} {
+    padding-left: #{$numbers}px;
+  }
+
+  .p-r-#{$numbers} {
+    padding-right: #{$numbers}px;
+  }
+
+  .m-#{$numbers} {
+    margin: #{$numbers}px;
+  }
+
+  .m-t-#{$numbers} {
+    margin-top: #{$numbers}px;
+  }
+
+  .m-b-#{$numbers} {
+    margin-bottom: #{$numbers}px;
+  }
+
+  .m-r-#{$numbers} {
+    margin-right: #{$numbers}px;
+  }
+
+  .m-l-#{$numbers} {
+    margin-left: #{$numbers}px;
+  }
+
+  .m-p-#{$numbers} {
+    margin: percentage($numbers / 100);
+  }
+}

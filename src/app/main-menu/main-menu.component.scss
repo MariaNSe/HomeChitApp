@@ -8,16 +8,18 @@ nav {
 
 ul {
   margin-top: 100px;
+
   li {
     &:hover {
       background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
-      box-shadow: 0 5px 15px 0 rgba(7,8,8,0.50);
+      box-shadow: 0 5px 15px 0 rgba(7, 8, 8, 0.50);
       color: white;
-      margin-left: 0!important;
-      margin-right: 0!important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
       width: 110px;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
+
       a {
         padding-left: 60px;
       }
@@ -31,14 +33,16 @@ ul:not(.browser-default) > li {
   margin: 16px;
 }
 
-img {
-  object-fit: cover;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin: 16px;
+.user-avatar {
+  img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 16px;
 
-  &:hover {
-    border: 2px solid $active-blue;
+    &:hover {
+      border: 2px solid $active-blue;
+    }
   }
 }
