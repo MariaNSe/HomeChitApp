@@ -1,0 +1,10 @@
+nav {
+  background-color: #16191C;
+  width: 100px !important;
+}
+
+.nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 100vh;
+}
+
+/*# sourceMappingURL=overrides.css.map */
