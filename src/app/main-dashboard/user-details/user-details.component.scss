@@ -1,0 +1,19 @@
+@import "../../../assets/scss/variables";
+
+.user-card {
+  background: $light-background;
+  height: 100vh;
+  .header {
+    color: white;
+    font-size: 32px;
+  }
+}
+.credit-cards {
+  background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+  height: 200px;
+  width: 328px;
+  margin-left: -10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

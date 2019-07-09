@@ -1,0 +1,13 @@
+@import "../../assets/scss/variables";
+
+.wrap-main-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.dashboard-wrapper {
+  background: $background-main;
+  width: 100%;
+  height: 100vh;
+  margin-top: -15px;
+}
