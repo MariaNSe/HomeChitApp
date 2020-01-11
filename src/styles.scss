@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/theming";
+@import '~bootstrap-4-grid/scss/grid.scss';
+@import "assets/styles.scss";
+
+
+@include mat-core();

@@ -1,10 +1,26 @@
-@import "overrides";
-@import "paddigs-helper";
-@import "sizes";
 //Colors
 
 $background-main: #1F2327;
 $dark-background: #16191C;
 $light-background: #292E33;
+$white-font-color: #fff;
 
 $active-blue: #4072EE;
+
+
+// Header Styles
+$h1-fontsize: 6rem;
+$h2-fontsize: 5rem;
+$h3-fontsize: 4rem;
+$h4-fontsize: 2rem;
+$h5-fontsize: 1.8rem;
+$h6-fontsize: 1.6rem;
+$small-fontsize: 1.4rem;
+
+//device sizes
+$device-xs: 540px;
+$device-sm: 768px;
+$device-md: 992px;
+$device-lg: 1200px;
+$device-xl: 1600px;
+

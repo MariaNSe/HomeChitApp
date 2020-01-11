@@ -1,51 +1,47 @@
-$numbers: (0, 4, 8, 10, 16, 18, 20, 24, 30, 40, 45, 50, 60, 70, 80, 90, 92, 100);
+$numbers: (0, 1, 2);
 
 @each $numbers in $numbers {
   .p-#{$numbers} {
-    padding: #{$numbers}px;
-  }
-
-  .p-p-#{$numbers} {
-    padding: percentage($numbers / 100);
+    padding: #{$numbers}rem;
   }
 
   .p-t-#{$numbers} {
-    padding-top: #{$numbers}px;
+    padding-top: #{$numbers}rem;
   }
 
   .p-b-#{$numbers} {
-    padding-bottom: #{$numbers}px;
+    padding-bottom: #{$numbers}rem;
   }
 
   .p-l-#{$numbers} {
-    padding-left: #{$numbers}px;
+    padding-left: #{$numbers}rem;
   }
 
   .p-r-#{$numbers} {
-    padding-right: #{$numbers}px;
+    padding-right: #{$numbers}rem;
   }
 
   .m-#{$numbers} {
-    margin: #{$numbers}px;
+    margin: #{$numbers}rem;
   }
 
   .m-t-#{$numbers} {
-    margin-top: #{$numbers}px;
+    margin-top: #{$numbers}rem;
   }
 
   .m-b-#{$numbers} {
-    margin-bottom: #{$numbers}px;
+    margin-bottom: #{$numbers}rem;
   }
 
   .m-r-#{$numbers} {
-    margin-right: #{$numbers}px;
+    margin-right: #{$numbers}rem;
   }
 
   .m-l-#{$numbers} {
-    margin-left: #{$numbers}px;
+    margin-left: #{$numbers}rem;
   }
+}
 
-  .m-p-#{$numbers} {
-    margin: percentage($numbers / 100);
-  }
+.m-auto {
+  margin: 0 auto;
 }

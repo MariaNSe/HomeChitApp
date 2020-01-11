@@ -9,6 +9,8 @@ import { MainDashboardComponent } from './main-dashboard/main-dashboard.componen
 import { DashboardComponent } from './main-dashboard/dashboard/dashboard.component';
 import { UserDetailsComponent } from './main-dashboard/user-details/user-details.component';
 import { SharedComponent } from './main-dashboard/shared/shared.component';
+import { MaterialModule } from './material.module';
+
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { SharedComponent } from './main-dashboard/shared/shared.component';
   ],
   imports: [
     BrowserModule,
+    MaterialModule,
     AppRoutingModule
   ],
   providers: [],
