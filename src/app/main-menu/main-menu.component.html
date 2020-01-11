@@ -1,15 +1,41 @@
 <nav>
   <div class="nav-wrapper">
-    <a href="#" class="user-avatar">
+    <!--    TODO add user.id for router-->
+    <a [routerLink]="['/user', 1]"
+       class="user-avatar">
       <img src="../../assets/images/avatar.jpg"
            alt="avatar"
       />
     </a>
     <ul>
-      <li><a href=""><i class="material-icons small">trending_up</i></a></li>
-      <li><a href=""><i class="material-icons small">shopping_basket</i></a></li>
-      <li><a href=""><i class="material-icons">library_books</i></a></li>
-      <li><a href=""><i class="material-icons">settings</i></a></li>
+      <li>
+        <a routerLink="/dashboard"
+           routerLinkActive="active-link"
+        >
+          <mat-icon>trending_up</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/shop-list"
+           routerLinkActive="active-link"
+        >
+          <mat-icon>shopping_basket</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/monthly-plan"
+           routerLinkActive="active-link"
+        >
+          <mat-icon>calendar_today</mat-icon>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/settings"
+           routerLinkActive="active-link"
+        >
+          <mat-icon>settings</mat-icon>
+        </a>
+      </li>
     </ul>
   </div>
 </nav>

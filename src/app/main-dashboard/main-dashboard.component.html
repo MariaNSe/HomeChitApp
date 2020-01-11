@@ -1,14 +1,10 @@
-<div class="wrap-main-page m-0">
-    <div class="w-100-px">
-        <app-main-menu></app-main-menu>
+<app-menu-container>
+  <div class="flex direction-row align-items-center content-between">
+    <div class="dashboard-wrapper">
+      <app-dashboard></app-dashboard>
     </div>
-    <div class="w-p-100">
-        <div class="dashboard-wrapper">
-            <app-dashboard></app-dashboard>
-        </div>
+    <div>
+      <app-user-details></app-user-details>
     </div>
-    <div class="">
-        <app-user-details></app-user-details>
-    </div>
-</div>
-
+  </div>
+</app-menu-container>

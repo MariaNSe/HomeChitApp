@@ -10,6 +10,12 @@ import { DashboardComponent } from './main-dashboard/dashboard/dashboard.compone
 import { UserDetailsComponent } from './main-dashboard/user-details/user-details.component';
 import { SharedComponent } from './main-dashboard/shared/shared.component';
 import { MaterialModule } from './material.module';
+import { MonthlyBudgetComponent } from './monthly-budget/monthly-budget.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { SettingsPageComponent } from './settings-page/settings-page.component';
+import { UserInfoComponent } from './user-info/user-info.component';
+import { ShopListPageComponent } from './shop-list-page/shop-list-page.component';
+import { MenuContainerComponent } from './menu-container/menu-container.component';
 
 
 @NgModule({
@@ -20,7 +26,13 @@ import { MaterialModule } from './material.module';
     MainDashboardComponent,
     DashboardComponent,
     UserDetailsComponent,
-    SharedComponent
+    SharedComponent,
+    MonthlyBudgetComponent,
+    PageNotFoundComponent,
+    SettingsPageComponent,
+    UserInfoComponent,
+    ShopListPageComponent,
+    MenuContainerComponent
   ],
   imports: [
     BrowserModule,

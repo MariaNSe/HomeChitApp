@@ -7,42 +7,50 @@ nav {
 }
 
 ul {
-  margin-top: 100px;
+  padding-right: 2.4rem;
+  padding-left: 0;
+  margin-top: 10rem;
 
   li {
-    &:hover {
-      background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
-      box-shadow: 0 5px 15px 0 rgba(7, 8, 8, 0.50);
-      color: white;
-      margin-left: 0 !important;
-      margin-right: 0 !important;
-      width: 110px;
-      border-top-right-radius: 10px;
-      border-bottom-right-radius: 10px;
+    a {
+      padding: 2rem 4rem 2rem 4rem;
+      color: $white;
 
-      a {
-        padding-left: 60px;
+      &:hover {
+        background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
+        box-shadow: 0 5px 15px 0 rgba(7, 8, 8, 0.50);
+        color: $white;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
       }
     }
-
   }
 }
 
 ul:not(.browser-default) > li {
   list-style-type: none;
-  margin: 16px;
+  margin-top: 4rem;
 }
 
 .user-avatar {
   img {
     object-fit: cover;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    margin: 16px;
+    width: 6rem;
+    height: 6rem;
+    margin: 1.6rem;
 
     &:hover {
-      border: 2px solid $active-blue;
+      border: 0.2rem solid $active-blue;
     }
   }
+}
+
+.active-link {
+  box-shadow: 0 5px 15px 0 rgba(7, 8, 8, 0.50);
+  background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
