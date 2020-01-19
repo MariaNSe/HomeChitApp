@@ -1,6 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, OnInit, Input, ViewChild} from '@angular/core';
 import {switchMap} from 'rxjs/operators';
 import {Router, ActivatedRoute, ParamMap} from '@angular/router';
+import {MediaMatcher} from '@angular/cdk/layout';
+import {MatSidenav} from '@angular/material';
 
 @Component({
   selector: 'app-main-menu',
@@ -8,12 +10,20 @@ import {Router, ActivatedRoute, ParamMap} from '@angular/router';
   styleUrls: ['./main-menu.component.scss']
 })
 export class MainMenuComponent implements OnInit {
+  @Input() isLoggedIn = false;
+  mobileQuery: MediaQueryList;
+  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
+
+  reason = '';
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router
-    //TODO private service: UserServices
+    private router: Router,
+    changeDetectorRef: ChangeDetectorRef,
+    media: MediaMatcher
+    // TODO private service: UserServices
   ) {
+    this.mobileQuery = media.matchMedia('(max-width: 990px)');
   }
 
   ngOnInit() {
@@ -24,4 +34,8 @@ export class MainMenuComponent implements OnInit {
     // );
   }
 
+  close(reason: string) {
+    this.reason = reason;
+    this.sidenav.close();
+  }
 }

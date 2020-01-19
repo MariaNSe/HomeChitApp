@@ -2,8 +2,8 @@
 
 nav {
   background-color: $dark-background;
-  width: 100px !important;
-  height: 100vh !important;
+  width: 100px;
+  height: 100vh;
 }
 
 ul {
@@ -53,4 +53,33 @@ ul:not(.browser-default) > li {
   background-image: linear-gradient(-180deg, #679CF6 0%, #4072EE 100%);
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+@media (max-width: $device-md) {
+  nav {
+    width: auto;
+    height: 2rem;
+    padding: 2rem;
+    background: $background-main;
+
+    a:focus {
+      outline: none;
+    }
+  }
+
+  .warp-sidenav {
+    background: $dark-background;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+
+    .active-link {
+      border-radius: 1rem;
+    }
+  }
+
+  .mat-nav-list .mat-list-item {
+    color: $white-font-color;
+  }
+
 }

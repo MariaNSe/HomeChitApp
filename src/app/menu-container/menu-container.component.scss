@@ -2,10 +2,11 @@
 
 .wrap-content {
   width: 100%;
-  height: 100%;
   background: $background-main;
 }
 
 .wrap-menu {
   position: relative;
 }
+
+@media (max-width: $device-md) {}

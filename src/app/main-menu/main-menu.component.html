@@ -1,5 +1,6 @@
 <nav>
-  <div class="nav-wrapper">
+  <!-- START DESKTOP VIEW MENU-->
+  <div class="nav-wrapper d-none d-lg-block">
     <!--    TODO add user.id for router-->
     <a [routerLink]="['/user', 1]"
        class="user-avatar">
@@ -38,4 +39,64 @@
       </li>
     </ul>
   </div>
+  <!-- END DESKTOP VIEW MENU-->
+
+  <!-- START MOBILE VIEW MENU-->
+  <div class="nav-wrapper d-lg-none">
+    <mat-sidenav-container>
+      <mat-sidenav #sidenav
+                   (keydown.escape)="close('escape')"
+                   disableClose
+                   [fixedInViewport]="mobileQuery.matches"
+                   fixedTopGap="0"
+                   class="warp-sidenav"
+      >
+        <a>
+          <mat-icon class="white"
+                    (click)="close('toggle button')">
+            close
+          </mat-icon>
+        </a>
+        <mat-nav-list>
+          <a [routerLink]="['/user', 1]"
+             class="user-avatar">
+            <img src="../../assets/images/avatar.jpg"
+                 alt="avatar"
+            />
+          </a>
+          <a mat-list-item
+             routerLink="/dashboard"
+             routerLinkActive="active-link">
+            Dashboard
+          </a>
+          <a mat-list-item
+             routerLink="/shop-list"
+             routerLinkActive="active-link">
+            Shopping List
+          </a>
+          <a mat-list-item
+             routerLink="/monthly-plan"
+             routerLinkActive="active-link">
+            Monthly Plan
+          </a>
+          <a mat-list-item
+             routerLink="/settings"
+             routerLinkActive="active-link">
+            Settings
+          </a>
+          <a mat-list-item routerLink=".">Log out</a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <a (click)="sidenav.toggle()">
+          <mat-icon class="white">
+            menu
+          </mat-icon>
+        </a>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+
+  </div>
+  <!-- END MOBILE VIEW MENU-->
+
 </nav>

@@ -1,3 +1,4 @@
+@import "variables";
 
 .flex {
   display: flex;
@@ -74,4 +75,10 @@
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+@media (max-width: $device-md) {
+  .direction-column-sm {
+    flex-direction: column;
+  }
 }
