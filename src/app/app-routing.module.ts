@@ -1,12 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import {MainDashboardComponent} from './main-dashboard/main-dashboard.component';
-import {MonthlyBudgetComponent} from './monthly-budget/monthly-budget.component';
-import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
-import {SettingsPageComponent} from './settings-page/settings-page.component';
-import {UserInfoComponent} from './user-info/user-info.component';
-import {ShopListPageComponent} from './shop-list-page/shop-list-page.component';
+import {MainDashboardComponent} from './modules/main-dashboard/main-dashboard.component';
+import {MonthlyBudgetComponent} from './modules/monthly-budget/monthly-budget.component';
+import {PageNotFoundComponent} from './modules/page-not-found/page-not-found.component';
+import {SettingsPageComponent} from './modules/settings-page/settings-page.component';
+import {UserInfoComponent} from './modules/user-info/user-info.component';
+import {ShopListPageComponent} from './modules/shop-list-page/shop-list-page.component';
 
 const appRoutes: Routes = [
   {
