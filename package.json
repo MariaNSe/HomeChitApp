@@ -15,7 +15,7 @@
     "lint-quiet": "eslint --fix-dry-run --quiet 'src/**/*.ts'",
     "lint-fix": "eslint --fix 'src/**/*.ts'",
     "codestyle-checks": "npm run prettier && npm run lint-quiet",
-    "github-checks": "npm run config && npm run prettier && npm run lint-quiet && npm run build"
+    "github-checks": "npm run prettier && npm run lint-quiet && npm run build"
   },
   "private": true,
   "husky": {
