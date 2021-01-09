@@ -12,7 +12,7 @@ import {MatSidenav} from '@angular/material';
 export class MainMenuComponent implements OnInit {
   @Input() isLoggedIn = false;
   mobileQuery: MediaQueryList;
-  @ViewChild('sidenav', {static: false}) sidenav: MatSidenav;
+  @ViewChild('sidenav') sidenav: MatSidenav;
 
   reason = '';
 

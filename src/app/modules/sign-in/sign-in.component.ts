@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,10 +7,8 @@ import {Component, OnInit} from '@angular/core';
 })
 
 
-export class SignInComponent implements OnInit {
+export class SignInComponent {
 
-  constructor() {
-  }
   toggleActive() {
     const signUpButton = document.getElementById('signUp');
     const signInButton = document.getElementById('signIn');
@@ -24,8 +22,5 @@ export class SignInComponent implements OnInit {
       container.classList.remove('right-panel-active');
     });
   }
-  ngOnInit() {
-  }
-
 }
 
