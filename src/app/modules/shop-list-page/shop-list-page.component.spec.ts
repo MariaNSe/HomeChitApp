@@ -1,25 +1,26 @@
-import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing'
 
-import { ShopListPageComponent } from './shop-list-page.component';
+import { ShopListPageComponent } from './shop-list-page.component'
 
 describe('ShopListPageComponent', () => {
-  let component: ShopListPageComponent;
-  let fixture: ComponentFixture<ShopListPageComponent>;
+  let component: ShopListPageComponent
+  let fixture: ComponentFixture<ShopListPageComponent>
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [ ShopListPageComponent ]
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [ShopListPageComponent],
+      }).compileComponents()
     })
-    .compileComponents();
-  }));
+  )
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ShopListPageComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ShopListPageComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

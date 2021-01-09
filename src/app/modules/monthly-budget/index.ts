@@ -1,1 +1,1 @@
-export * from './montly-budget-routing.module';
+export * from './montly-budget-routing.module'
