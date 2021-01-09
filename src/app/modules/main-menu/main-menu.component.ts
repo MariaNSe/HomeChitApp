@@ -5,8 +5,8 @@ import {
   Input,
   ViewChild,
 } from '@angular/core'
-import { switchMap } from 'rxjs/operators'
-import { Router, ActivatedRoute, ParamMap } from '@angular/router'
+
+import { Router, ActivatedRoute } from '@angular/router'
 import { MediaMatcher } from '@angular/cdk/layout'
 import { MatSidenav } from '@angular/material'
 
@@ -17,7 +17,9 @@ import { MatSidenav } from '@angular/material'
 })
 export class MainMenuComponent implements OnInit {
   @Input() isLoggedIn = false
+
   mobileQuery: MediaQueryList
+
   @ViewChild('sidenav') sidenav: MatSidenav
 
   reason = ''
