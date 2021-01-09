@@ -9,6 +9,7 @@
     "lint": "eslint --fix-dry-run 'src/**/*.ts'",
     "e2e": "ng e2e",
     "stylelint": "stylelint '**/*.scss'",
+    "prettier-quick": "pretty-quick --staged",
     "prettier": "prettier --check 'src/**/*.{ts,html}'",
     "prettier-fix": "prettier --write 'src/**/*.{ts,html}'",
     "lint-quiet": "eslint --fix-dry-run --quiet 'src/**/*.ts'",
@@ -17,7 +18,6 @@
     "github-checks": "npm run config && npm run prettier && npm run lint-quiet && npm run build"
   },
   "private": true,
-  "github-checks": "npm run prettier && npm run lint-quiet && npm run build",
   "husky": {
     "hooks": {
       "pre-push": "npm run github-checks"
