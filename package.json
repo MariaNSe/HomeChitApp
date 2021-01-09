@@ -17,7 +17,7 @@
     "github-checks": "npm run config && npm run prettier && npm run lint-quiet && npm run build"
   },
   "private": true,
-  "github-checks": "npm run config && npm run prettier && npm run lint-quiet && npm run build",
+  "github-checks": "npm run prettier && npm run lint-quiet && npm run build",
   "husky": {
     "hooks": {
       "pre-push": "npm run github-checks"
